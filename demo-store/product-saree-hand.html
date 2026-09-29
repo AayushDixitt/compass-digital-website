@@ -4,52 +4,205 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Hand-Embroidered Chikan Saree | Awadh Chikan Co. (Demo)</title>
+<meta name="description" content="Hand-Embroidered Chikan Saree — hand-embroidered Lucknowi chikankari at ₹3,999. Demo concept store; fictional product, no real sale." />
+<meta property="og:title" content="Hand-Embroidered Chikan Saree | Awadh Chikan Co. (Demo)" />
+<meta property="og:description" content="Six yards of ivory mulmul, hand-embroidered all over with bel-buti jaal and a heavy pallu border. Includes an unstitched blouse piece. Heirloom territory." />
+<meta property="og:type" content="product" />
+<meta property="og:image" content="https://compassdigital.in/demo-store/images/product-saree-hand.webp" />
+<link rel="canonical" href="https://compassdigital.in/demo-store/product-saree-hand.html" />
 <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-<div class="demo-banner">Demo concept store built by <a href="https://compassdigital.in/">Compass Digital</a> — not a real shop.</div>
-<header class="store-header"><div class="header-inner">
-<div class="brand"><h1>Awadh Chikan Co.</h1><p>Lucknow</p></div>
-<div class="header-actions"><a href="cart.html" class="cart-btn">Cart <span class="cart-count" style="display:none">0</span></a></div>
-</div></header>
-<nav class="store-nav"><ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="shop.html">Shop All</a></li>
-<li><a href="cart.html">Cart</a></li>
-</ul></nav>
-<main class="store-main">
-
-<div class="product-detail">
-<div class="product-img">S</div>
-<div class="product-detail-info">
-<h2>Hand-Embroidered Chikan Saree</h2>
-<div class="price">₹3,999</div>
-<p>A full hand-embroidered chikan saree that takes artisans weeks to complete. For weddings and special occasions.</p>
-<p><strong>Details:</strong> Georgette base. Fully hand-embroidered. 6.3m with blouse piece.</p>
-<div class="qty-selector">
-<button onclick="changeQty(-1)">−</button>
-<span id="qty">1</span>
-<button onclick="changeQty(1)">+</button>
-</div>
-<button class="btn" onclick="addToCartAndGo()">Add to Cart</button>
-<div class="mt-2"><a href="shop.html">← Back to Shop</a></div>
-</div>
-</div>
-<script>
-let qty = 1;
-function changeQty(d) { qty = Math.max(1, qty + d); document.getElementById('qty').textContent = qty; }
-function addToCartAndGo() {
-  addToCart("saree-hand", "Hand-Embroidered Chikan Saree", 3999, qty);
-  window.location.href = "cart.html";
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪡</text></svg>" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Hand-Embroidered Chikan Saree",
+  "image": "https://compassdigital.in/demo-store/images/product-saree-hand.webp",
+  "description": "Six yards of ivory mulmul, hand-embroidered all over with bel-buti jaal and a heavy pallu border. Includes an unstitched blouse piece. Heirloom territory.",
+  "brand": { "@type": "Brand", "name": "Awadh Chikan Co." },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "INR",
+    "price": "3999",
+    "availability": "https://schema.org/InStock"
+  }
 }
 </script>
+</head>
+<body>
+<div class="demo-banner">Demo concept store built by <a href="https://compassdigital.in/">Compass Digital</a> — not a real shop. No real payment.</div>
 
+<header class="store-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html"><h1>Awadh Chikan Co.</h1><p>Lucknow</p></a>
+    <nav class="header-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop All</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+    <div class="header-actions">
+      <a href="cart.html" class="cart-btn" aria-label="Open cart">🛒 Cart <span class="cart-count" style="display:none">0</span></a>
+    </div>
+  </div>
+</header>
+<nav class="mobile-nav" aria-label="Mobile"><ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="shop.html">Shop All</a></li>
+  <li><a href="cart.html">Cart</a></li>
+</ul></nav>
+
+<main class="store-main">
+  <div class="crumbs"><a href="index.html">Home</a><span>/</span><a href="shop.html?cat=women">Women</a><span>/</span>Hand-Embroidered Chikan Saree</div>
+
+  <div class="pd fade-up">
+    <div class="pd-gallery">
+      <span class="badge gold">Premium</span>
+      <img src="images/product-saree-hand.webp" alt="Hand-Embroidered Chikan Saree — hand-embroidered chikankari" fetchpriority="high" />
+    </div>
+    <div class="pd-info">
+      <div class="eyebrow">Women · Hand-embroidered</div>
+      <h1>Hand-Embroidered Chikan Saree</h1>
+      <div class="pd-price">
+        <span class="price">₹3,999</span>
+        <span class="mrp">₹5,499</span>
+        <span class="off">27% off</span>
+      </div>
+      <div class="tax-note">Inclusive of all taxes. Demo price — fictional product.</div>
+      <p class="pd-desc">Six yards of ivory mulmul, hand-embroidered all over with bel-buti jaal and a heavy pallu border. Includes an unstitched blouse piece. Heirloom territory.</p>
+
+      <div class="opt-label">Select size</div>
+      <div class="size-pills" id="size-pills">
+          <button class="size-pill selected" data-size="One size">One size</button>
+      </div>
+
+      <div class="qty-add">
+        <div class="qty-selector">
+          <button onclick="changeQty(-1)" aria-label="Decrease quantity">−</button>
+          <span id="qty">1</span>
+          <button onclick="changeQty(1)" aria-label="Increase quantity">+</button>
+        </div>
+        <button class="btn" onclick="addToCartGo()">Add to Cart</button>
+      </div>
+      <div class="wa-row">
+        <button class="btn btn-whatsapp" onclick="buyOnWhatsApp()">Buy Now on WhatsApp</button>
+      </div>
+
+      <div class="trust-row">
+        <div><strong>Free shipping</strong>on orders over ₹999</div>
+        <div><strong>COD available</strong>pay at your door</div>
+        <div><strong>7-day returns</strong>no questions asked</div>
+      </div>
+
+      <div class="accord">
+        <div class="accord-item open">
+          <button class="accord-head">Details</button>
+          <div class="accord-body"><ul>
+            <li>All-over hand-embroidered bel-buti jaal</li>
+            <li>Heavily embroidered pallu with lace edging</li>
+            <li>Length 6.3 m including 0.8 m unstitched blouse piece</li>
+            <li>Featherlight mulmul — drapes without effort</li>
+          </ul></div>
+        </div>
+        <div class="accord-item">
+          <button class="accord-head">Fabric &amp; Care</button>
+          <div class="accord-body"><p>Pure mulmul cotton. Dry clean recommended; or gentle hand wash, dry flat in shade.</p></div>
+        </div>
+        <div class="accord-item">
+          <button class="accord-head">Shipping &amp; Returns (demo)</button>
+          <div class="accord-body"><p>Ships in 2–4 days across India; free over ₹999. 7-day easy returns. In this demo nothing ships — it's all fictional, but the flow is real.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="related-head">
+    <h2 class="h2" style="margin-bottom:0">You may also like</h2>
+    <a href="shop.html">View all →</a>
+  </div>
+  <div class="product-grid">
+      <div class="product-card">
+        <a class="p-img" href="product-anarkali.html"><span class="badge green">New</span><img src="images/product-anarkali.webp" alt="Gulnaar Blush Chikan Anarkali" loading="lazy" /></a>
+        <div class="product-info"><h3><a href="product-anarkali.html">Gulnaar Blush Chikan Anarkali</a></h3>
+          <div class="price-row"><span class="price">₹2,899</span><span class="mrp">₹3,799</span><span class="off">24% off</span></div>
+          <button class="quick-add" onclick="quickAdd('anarkali','Gulnaar Blush Chikan Anarkali',2899,'product-anarkali.webp','S')">Add to Cart</button></div>
+      </div>
+      <div class="product-card">
+        <a class="p-img" href="product-dupatta-mulmul.html"><img src="images/product-dupatta-mulmul.webp" alt="Blush Mulmul Chikan Dupatta" loading="lazy" /></a>
+        <div class="product-info"><h3><a href="product-dupatta-mulmul.html">Blush Mulmul Chikan Dupatta</a></h3>
+          <div class="price-row"><span class="price">₹899</span><span class="mrp">₹1,199</span><span class="off">25% off</span></div>
+          <button class="quick-add" onclick="quickAdd('dupatta-mulmul','Blush Mulmul Chikan Dupatta',899,'product-dupatta-mulmul.webp','One size')">Add to Cart</button></div>
+      </div>
+      <div class="product-card">
+        <a class="p-img" href="product-kurta-white.html"><span class="badge ">Bestseller</span><img src="images/product-kurta-white.webp" alt="Classic White Chikan Kurta" loading="lazy" /></a>
+        <div class="product-info"><h3><a href="product-kurta-white.html">Classic White Chikan Kurta</a></h3>
+          <div class="price-row"><span class="price">₹1,899</span><span class="mrp">₹2,499</span><span class="off">24% off</span></div>
+          <button class="quick-add" onclick="quickAdd('kurta-white','Classic White Chikan Kurta',1899,'product-kurta-white.webp','S')">Add to Cart</button></div>
+      </div>
+  </div>
 </main>
+
 <footer class="store-footer">
-<p><strong>Awadh Chikan Co., Lucknow</strong> — Demo concept store</p>
-<p>Built by <a href="https://compassdigital.in/">Compass Digital</a> — not a real shop. No real payment.</p>
-<p>Fictional products, placeholder images.</p>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <h4>Awadh Chikan Co.</h4>
+        <p>Hand-embroidered chikankari from Lucknow. A demo concept store — the brand, products and prices are fictional.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="shop.html">Shop All</a></li>
+          <li><a href="shop.html?cat=women">Women</a></li>
+          <li><a href="shop.html?cat=men">Men</a></li>
+          <li><a href="shop.html?cat=kids">Kids</a></li>
+          <li><a href="shop.html?cat=home">Home Living</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Demo info</h4>
+        <ul>
+          <li><a href="cart.html">Demo checkout</a></li>
+          <li><a href="https://wa.me/919696442435" target="_blank" rel="noopener">Order on WhatsApp</a></li>
+          <li><a href="https://compassdigital.in/">Built by Compass Digital</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p><strong>Awadh Chikan Co., Lucknow</strong> — demo concept store. Not a real shop. No real payment is taken.</p>
+      <p>Fictional products. Product images are AI-generated for demonstration. Built by <a href="https://compassdigital.in/">Compass Digital</a>.</p>
+    </div>
+  </div>
 </footer>
+
 <script src="app.js"></script>
+<script>
+let qty = 1;
+let selectedSize = "One size";
+
+document.getElementById('size-pills').addEventListener('click', e => {
+  const btn = e.target.closest('.size-pill');
+  if (!btn) return;
+  document.querySelectorAll('.size-pill').forEach(b => b.classList.remove('selected'));
+  btn.classList.add('selected');
+  selectedSize = btn.dataset.size;
+});
+
+function changeQty(d) {
+  qty = Math.max(1, Math.min(9, qty + d));
+  document.getElementById('qty').textContent = qty;
+}
+
+function addToCartGo() {
+  addToCart('saree-hand', 'Hand-Embroidered Chikan Saree', 3999, 'product-saree-hand.webp', selectedSize, qty);
+  showToast('Added ' + qty + ' × Hand-Embroidered Chikan Saree (' + selectedSize + ') — <a href="cart.html">View cart</a>');
+  openDrawer();
+}
+
+function buyOnWhatsApp() {
+  const msg = 'Hello Aayush, I tried your demo store (Awadh Chikan Co.). I want an online store like this for my own brand — what would it cost?\n\nI\'d like: Hand-Embroidered Chikan Saree (' + selectedSize + ') x ' + qty + ' = ₹' + (3999 * qty).toLocaleString('en-IN') + '\n\n(This is a demo — no real payment.)';
+  window.open('https://wa.me/919696442435?text=' + encodeURIComponent(msg), '_blank');
+}
+</script>
 </body>
 </html>

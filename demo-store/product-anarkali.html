@@ -3,53 +3,209 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Chikan Anarkali | Awadh Chikan Co. (Demo)</title>
+<title>Gulnaar Blush Chikan Anarkali | Awadh Chikan Co. (Demo)</title>
+<meta name="description" content="Gulnaar Blush Chikan Anarkali — hand-embroidered Lucknowi chikankari at ₹2,899. Demo concept store; fictional product, no real sale." />
+<meta property="og:title" content="Gulnaar Blush Chikan Anarkali | Awadh Chikan Co. (Demo)" />
+<meta property="og:description" content="A blush-pink anarkali with kali-wise embroidery that flares as it falls — festive enough for sangeet, soft enough for a day wedding." />
+<meta property="og:type" content="product" />
+<meta property="og:image" content="https://compassdigital.in/demo-store/images/product-anarkali.webp" />
+<link rel="canonical" href="https://compassdigital.in/demo-store/product-anarkali.html" />
 <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-<div class="demo-banner">Demo concept store built by <a href="https://compassdigital.in/">Compass Digital</a> — not a real shop.</div>
-<header class="store-header"><div class="header-inner">
-<div class="brand"><h1>Awadh Chikan Co.</h1><p>Lucknow</p></div>
-<div class="header-actions"><a href="cart.html" class="cart-btn">Cart <span class="cart-count" style="display:none">0</span></a></div>
-</div></header>
-<nav class="store-nav"><ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="shop.html">Shop All</a></li>
-<li><a href="cart.html">Cart</a></li>
-</ul></nav>
-<main class="store-main">
-
-<div class="product-detail">
-<div class="product-img">A</div>
-<div class="product-detail-info">
-<h2>Chikan Anarkali</h2>
-<div class="price">₹2,899</div>
-<p>Flowing anarkali with dense chikan embroidery on the yoke. Makes an entrance.</p>
-<p><strong>Details:</strong> Georgette with cotton lining. Hand-finished. Available in S, M, L.</p>
-<div class="qty-selector">
-<button onclick="changeQty(-1)">−</button>
-<span id="qty">1</span>
-<button onclick="changeQty(1)">+</button>
-</div>
-<button class="btn" onclick="addToCartAndGo()">Add to Cart</button>
-<div class="mt-2"><a href="shop.html">← Back to Shop</a></div>
-</div>
-</div>
-<script>
-let qty = 1;
-function changeQty(d) { qty = Math.max(1, qty + d); document.getElementById('qty').textContent = qty; }
-function addToCartAndGo() {
-  addToCart("anarkali", "Chikan Anarkali", 2899, qty);
-  window.location.href = "cart.html";
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪡</text></svg>" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Gulnaar Blush Chikan Anarkali",
+  "image": "https://compassdigital.in/demo-store/images/product-anarkali.webp",
+  "description": "A blush-pink anarkali with kali-wise embroidery that flares as it falls — festive enough for sangeet, soft enough for a day wedding.",
+  "brand": { "@type": "Brand", "name": "Awadh Chikan Co." },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "INR",
+    "price": "2899",
+    "availability": "https://schema.org/InStock"
+  }
 }
 </script>
+</head>
+<body>
+<div class="demo-banner">Demo concept store built by <a href="https://compassdigital.in/">Compass Digital</a> — not a real shop. No real payment.</div>
 
+<header class="store-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html"><h1>Awadh Chikan Co.</h1><p>Lucknow</p></a>
+    <nav class="header-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop All</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+    <div class="header-actions">
+      <a href="cart.html" class="cart-btn" aria-label="Open cart">🛒 Cart <span class="cart-count" style="display:none">0</span></a>
+    </div>
+  </div>
+</header>
+<nav class="mobile-nav" aria-label="Mobile"><ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="shop.html">Shop All</a></li>
+  <li><a href="cart.html">Cart</a></li>
+</ul></nav>
+
+<main class="store-main">
+  <div class="crumbs"><a href="index.html">Home</a><span>/</span><a href="shop.html?cat=women">Women</a><span>/</span>Gulnaar Blush Chikan Anarkali</div>
+
+  <div class="pd fade-up">
+    <div class="pd-gallery">
+      <span class="badge green">New</span>
+      <img src="images/product-anarkali.webp" alt="Gulnaar Blush Chikan Anarkali — hand-embroidered chikankari" fetchpriority="high" />
+    </div>
+    <div class="pd-info">
+      <div class="eyebrow">Women · Hand-embroidered</div>
+      <h1>Gulnaar Blush Chikan Anarkali</h1>
+      <div class="pd-price">
+        <span class="price">₹2,899</span>
+        <span class="mrp">₹3,799</span>
+        <span class="off">24% off</span>
+      </div>
+      <div class="tax-note">Inclusive of all taxes. Demo price — fictional product.</div>
+      <p class="pd-desc">A blush-pink anarkali with kali-wise embroidery that flares as it falls — festive enough for sangeet, soft enough for a day wedding.</p>
+
+      <div class="opt-label">Select size</div>
+      <div class="size-pills" id="size-pills">
+          <button class="size-pill selected" data-size="S">S</button>
+          <button class="size-pill" data-size="M">M</button>
+          <button class="size-pill" data-size="L">L</button>
+          <button class="size-pill" data-size="XL">XL</button>
+      </div>
+
+      <div class="qty-add">
+        <div class="qty-selector">
+          <button onclick="changeQty(-1)" aria-label="Decrease quantity">−</button>
+          <span id="qty">1</span>
+          <button onclick="changeQty(1)" aria-label="Increase quantity">+</button>
+        </div>
+        <button class="btn" onclick="addToCartGo()">Add to Cart</button>
+      </div>
+      <div class="wa-row">
+        <button class="btn btn-whatsapp" onclick="buyOnWhatsApp()">Buy Now on WhatsApp</button>
+      </div>
+
+      <div class="trust-row">
+        <div><strong>Free shipping</strong>on orders over ₹999</div>
+        <div><strong>COD available</strong>pay at your door</div>
+        <div><strong>7-day returns</strong>no questions asked</div>
+      </div>
+
+      <div class="accord">
+        <div class="accord-item open">
+          <button class="accord-head">Details</button>
+          <div class="accord-body"><ul>
+            <li>Kali-panelled flare with all-over chikankari</li>
+            <li>Embroidered neckline, sleeves and hem border</li>
+            <li>Soft net lining for structure without weight</li>
+            <li>Floor-grazing length</li>
+          </ul></div>
+        </div>
+        <div class="accord-item">
+          <button class="accord-head">Fabric &amp; Care</button>
+          <div class="accord-body"><p>Georgette-blend with net lining. Dry clean only.</p></div>
+        </div>
+        <div class="accord-item">
+          <button class="accord-head">Shipping &amp; Returns (demo)</button>
+          <div class="accord-body"><p>Ships in 2–4 days across India; free over ₹999. 7-day easy returns. In this demo nothing ships — it's all fictional, but the flow is real.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="related-head">
+    <h2 class="h2" style="margin-bottom:0">You may also like</h2>
+    <a href="shop.html">View all →</a>
+  </div>
+  <div class="product-grid">
+      <div class="product-card">
+        <a class="p-img" href="product-saree-hand.html"><span class="badge gold">Premium</span><img src="images/product-saree-hand.webp" alt="Hand-Embroidered Chikan Saree" loading="lazy" /></a>
+        <div class="product-info"><h3><a href="product-saree-hand.html">Hand-Embroidered Chikan Saree</a></h3>
+          <div class="price-row"><span class="price">₹3,999</span><span class="mrp">₹5,499</span><span class="off">27% off</span></div>
+          <button class="quick-add" onclick="quickAdd('saree-hand','Hand-Embroidered Chikan Saree',3999,'product-saree-hand.webp','One size')">Add to Cart</button></div>
+      </div>
+      <div class="product-card">
+        <a class="p-img" href="product-coord-set.html"><span class="badge green">New</span><img src="images/product-coord-set.webp" alt="Lavender Chikan Co-ord Set" loading="lazy" /></a>
+        <div class="product-info"><h3><a href="product-coord-set.html">Lavender Chikan Co-ord Set</a></h3>
+          <div class="price-row"><span class="price">₹2,499</span><span class="mrp">₹3,299</span><span class="off">24% off</span></div>
+          <button class="quick-add" onclick="quickAdd('coord-set','Lavender Chikan Co-ord Set',2499,'product-coord-set.webp','S')">Add to Cart</button></div>
+      </div>
+      <div class="product-card">
+        <a class="p-img" href="product-kurti-blue.html"><span class="badge ">Bestseller</span><img src="images/product-kurti-blue.webp" alt="Royal Blue Chikankari Kurti" loading="lazy" /></a>
+        <div class="product-info"><h3><a href="product-kurti-blue.html">Royal Blue Chikankari Kurti</a></h3>
+          <div class="price-row"><span class="price">₹1,499</span><span class="mrp">₹1,999</span><span class="off">25% off</span></div>
+          <button class="quick-add" onclick="quickAdd('kurti-blue','Royal Blue Chikankari Kurti',1499,'product-kurti-blue.webp','S')">Add to Cart</button></div>
+      </div>
+  </div>
 </main>
+
 <footer class="store-footer">
-<p><strong>Awadh Chikan Co., Lucknow</strong> — Demo concept store</p>
-<p>Built by <a href="https://compassdigital.in/">Compass Digital</a> — not a real shop. No real payment.</p>
-<p>Fictional products, placeholder images.</p>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <h4>Awadh Chikan Co.</h4>
+        <p>Hand-embroidered chikankari from Lucknow. A demo concept store — the brand, products and prices are fictional.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="shop.html">Shop All</a></li>
+          <li><a href="shop.html?cat=women">Women</a></li>
+          <li><a href="shop.html?cat=men">Men</a></li>
+          <li><a href="shop.html?cat=kids">Kids</a></li>
+          <li><a href="shop.html?cat=home">Home Living</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Demo info</h4>
+        <ul>
+          <li><a href="cart.html">Demo checkout</a></li>
+          <li><a href="https://wa.me/919696442435" target="_blank" rel="noopener">Order on WhatsApp</a></li>
+          <li><a href="https://compassdigital.in/">Built by Compass Digital</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p><strong>Awadh Chikan Co., Lucknow</strong> — demo concept store. Not a real shop. No real payment is taken.</p>
+      <p>Fictional products. Product images are AI-generated for demonstration. Built by <a href="https://compassdigital.in/">Compass Digital</a>.</p>
+    </div>
+  </div>
 </footer>
+
 <script src="app.js"></script>
+<script>
+let qty = 1;
+let selectedSize = "S";
+
+document.getElementById('size-pills').addEventListener('click', e => {
+  const btn = e.target.closest('.size-pill');
+  if (!btn) return;
+  document.querySelectorAll('.size-pill').forEach(b => b.classList.remove('selected'));
+  btn.classList.add('selected');
+  selectedSize = btn.dataset.size;
+});
+
+function changeQty(d) {
+  qty = Math.max(1, Math.min(9, qty + d));
+  document.getElementById('qty').textContent = qty;
+}
+
+function addToCartGo() {
+  addToCart('anarkali', 'Gulnaar Blush Chikan Anarkali', 2899, 'product-anarkali.webp', selectedSize, qty);
+  showToast('Added ' + qty + ' × Gulnaar Blush Chikan Anarkali (' + selectedSize + ') — <a href="cart.html">View cart</a>');
+  openDrawer();
+}
+
+function buyOnWhatsApp() {
+  const msg = 'Hello Aayush, I tried your demo store (Awadh Chikan Co.). I want an online store like this for my own brand — what would it cost?\n\nI\'d like: Gulnaar Blush Chikan Anarkali (' + selectedSize + ') x ' + qty + ' = ₹' + (2899 * qty).toLocaleString('en-IN') + '\n\n(This is a demo — no real payment.)';
+  window.open('https://wa.me/919696442435?text=' + encodeURIComponent(msg), '_blank');
+}
+</script>
 </body>
 </html>

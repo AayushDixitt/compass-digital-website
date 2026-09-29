@@ -4,52 +4,208 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Classic White Chikan Kurta | Awadh Chikan Co. (Demo)</title>
+<meta name="description" content="Classic White Chikan Kurta — hand-embroidered Lucknowi chikankari at ₹1,899. Demo concept store; fictional product, no real sale." />
+<meta property="og:title" content="Classic White Chikan Kurta | Awadh Chikan Co. (Demo)" />
+<meta property="og:description" content="The timeless one — tonal white shadow-work on white cotton, with a mandarin collar and mother-of-pearl buttons. Goes with everything you own." />
+<meta property="og:type" content="product" />
+<meta property="og:image" content="https://compassdigital.in/demo-store/images/product-kurta-white.webp" />
+<link rel="canonical" href="https://compassdigital.in/demo-store/product-kurta-white.html" />
 <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-<div class="demo-banner">Demo concept store built by <a href="https://compassdigital.in/">Compass Digital</a> — not a real shop.</div>
-<header class="store-header"><div class="header-inner">
-<div class="brand"><h1>Awadh Chikan Co.</h1><p>Lucknow</p></div>
-<div class="header-actions"><a href="cart.html" class="cart-btn">Cart <span class="cart-count" style="display:none">0</span></a></div>
-</div></header>
-<nav class="store-nav"><ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="shop.html">Shop All</a></li>
-<li><a href="cart.html">Cart</a></li>
-</ul></nav>
-<main class="store-main">
-
-<div class="product-detail">
-<div class="product-img">K</div>
-<div class="product-detail-info">
-<h2>Classic White Chikan Kurta</h2>
-<div class="price">₹1,899</div>
-<p>Hand-embroidered white chikan kurta in breathable cotton. The timeless Lucknow classic, made for everyday elegance.</p>
-<p><strong>Details:</strong> 100% cotton. Hand chikankari embroidery. Available in S, M, L, XL.</p>
-<div class="qty-selector">
-<button onclick="changeQty(-1)">−</button>
-<span id="qty">1</span>
-<button onclick="changeQty(1)">+</button>
-</div>
-<button class="btn" onclick="addToCartAndGo()">Add to Cart</button>
-<div class="mt-2"><a href="shop.html">← Back to Shop</a></div>
-</div>
-</div>
-<script>
-let qty = 1;
-function changeQty(d) { qty = Math.max(1, qty + d); document.getElementById('qty').textContent = qty; }
-function addToCartAndGo() {
-  addToCart("kurta-white", "Classic White Chikan Kurta", 1899, qty);
-  window.location.href = "cart.html";
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪡</text></svg>" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Classic White Chikan Kurta",
+  "image": "https://compassdigital.in/demo-store/images/product-kurta-white.webp",
+  "description": "The timeless one — tonal white shadow-work on white cotton, with a mandarin collar and mother-of-pearl buttons. Goes with everything you own.",
+  "brand": { "@type": "Brand", "name": "Awadh Chikan Co." },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "INR",
+    "price": "1899",
+    "availability": "https://schema.org/InStock"
+  }
 }
 </script>
+</head>
+<body>
+<div class="demo-banner">Demo concept store built by <a href="https://compassdigital.in/">Compass Digital</a> — not a real shop. No real payment.</div>
 
+<header class="store-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html"><h1>Awadh Chikan Co.</h1><p>Lucknow</p></a>
+    <nav class="header-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop All</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+    <div class="header-actions">
+      <a href="cart.html" class="cart-btn" aria-label="Open cart">🛒 Cart <span class="cart-count" style="display:none">0</span></a>
+    </div>
+  </div>
+</header>
+<nav class="mobile-nav" aria-label="Mobile"><ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="shop.html">Shop All</a></li>
+  <li><a href="cart.html">Cart</a></li>
+</ul></nav>
+
+<main class="store-main">
+  <div class="crumbs"><a href="index.html">Home</a><span>/</span><a href="shop.html?cat=women">Women</a><span>/</span>Classic White Chikan Kurta</div>
+
+  <div class="pd fade-up">
+    <div class="pd-gallery">
+      <span class="badge ">Bestseller</span>
+      <img src="images/product-kurta-white.webp" alt="Classic White Chikan Kurta — hand-embroidered chikankari" fetchpriority="high" />
+    </div>
+    <div class="pd-info">
+      <div class="eyebrow">Women · Hand-embroidered</div>
+      <h1>Classic White Chikan Kurta</h1>
+      <div class="pd-price">
+        <span class="price">₹1,899</span>
+        <span class="mrp">₹2,499</span>
+        <span class="off">24% off</span>
+      </div>
+      <div class="tax-note">Inclusive of all taxes. Demo price — fictional product.</div>
+      <p class="pd-desc">The timeless one — tonal white shadow-work on white cotton, with a mandarin collar and mother-of-pearl buttons. Goes with everything you own.</p>
+
+      <div class="opt-label">Select size</div>
+      <div class="size-pills" id="size-pills">
+          <button class="size-pill selected" data-size="S">S</button>
+          <button class="size-pill" data-size="M">M</button>
+          <button class="size-pill" data-size="L">L</button>
+          <button class="size-pill" data-size="XL">XL</button>
+      </div>
+
+      <div class="qty-add">
+        <div class="qty-selector">
+          <button onclick="changeQty(-1)" aria-label="Decrease quantity">−</button>
+          <span id="qty">1</span>
+          <button onclick="changeQty(1)" aria-label="Increase quantity">+</button>
+        </div>
+        <button class="btn" onclick="addToCartGo()">Add to Cart</button>
+      </div>
+      <div class="wa-row">
+        <button class="btn btn-whatsapp" onclick="buyOnWhatsApp()">Buy Now on WhatsApp</button>
+      </div>
+
+      <div class="trust-row">
+        <div><strong>Free shipping</strong>on orders over ₹999</div>
+        <div><strong>COD available</strong>pay at your door</div>
+        <div><strong>7-day returns</strong>no questions asked</div>
+      </div>
+
+      <div class="accord">
+        <div class="accord-item open">
+          <button class="accord-head">Details</button>
+          <div class="accord-body"><ul>
+            <li>Tonal shadow-work (ulta bakhiya) hand embroidery</li>
+            <li>Premium long-staple cotton</li>
+            <li>Mandarin collar, full sleeves, straight hem</li>
+            <li>A-line fall; pairs with palazzos, jeans or straight pants</li>
+          </ul></div>
+        </div>
+        <div class="accord-item">
+          <button class="accord-head">Fabric &amp; Care</button>
+          <div class="accord-body"><p>100% cotton. Hand wash or gentle machine wash; dry in shade. Iron on reverse to protect embroidery.</p></div>
+        </div>
+        <div class="accord-item">
+          <button class="accord-head">Shipping &amp; Returns (demo)</button>
+          <div class="accord-body"><p>Ships in 2–4 days across India; free over ₹999. 7-day easy returns. In this demo nothing ships — it's all fictional, but the flow is real.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="related-head">
+    <h2 class="h2" style="margin-bottom:0">You may also like</h2>
+    <a href="shop.html">View all →</a>
+  </div>
+  <div class="product-grid">
+      <div class="product-card">
+        <a class="p-img" href="product-kurti-blue.html"><span class="badge ">Bestseller</span><img src="images/product-kurti-blue.webp" alt="Royal Blue Chikankari Kurti" loading="lazy" /></a>
+        <div class="product-info"><h3><a href="product-kurti-blue.html">Royal Blue Chikankari Kurti</a></h3>
+          <div class="price-row"><span class="price">₹1,499</span><span class="mrp">₹1,999</span><span class="off">25% off</span></div>
+          <button class="quick-add" onclick="quickAdd('kurti-blue','Royal Blue Chikankari Kurti',1499,'product-kurti-blue.webp','S')">Add to Cart</button></div>
+      </div>
+      <div class="product-card">
+        <a class="p-img" href="product-kurta-men.html"><img src="images/product-kurta-men.webp" alt="Men's Sandalwood Chikan Kurta" loading="lazy" /></a>
+        <div class="product-info"><h3><a href="product-kurta-men.html">Men's Sandalwood Chikan Kurta</a></h3>
+          <div class="price-row"><span class="price">₹1,799</span><span class="mrp">₹2,299</span><span class="off">22% off</span></div>
+          <button class="quick-add" onclick="quickAdd('kurta-men','Men's Sandalwood Chikan Kurta',1799,'product-kurta-men.webp','M')">Add to Cart</button></div>
+      </div>
+      <div class="product-card">
+        <a class="p-img" href="product-dupatta-mulmul.html"><img src="images/product-dupatta-mulmul.webp" alt="Blush Mulmul Chikan Dupatta" loading="lazy" /></a>
+        <div class="product-info"><h3><a href="product-dupatta-mulmul.html">Blush Mulmul Chikan Dupatta</a></h3>
+          <div class="price-row"><span class="price">₹899</span><span class="mrp">₹1,199</span><span class="off">25% off</span></div>
+          <button class="quick-add" onclick="quickAdd('dupatta-mulmul','Blush Mulmul Chikan Dupatta',899,'product-dupatta-mulmul.webp','One size')">Add to Cart</button></div>
+      </div>
+  </div>
 </main>
+
 <footer class="store-footer">
-<p><strong>Awadh Chikan Co., Lucknow</strong> — Demo concept store</p>
-<p>Built by <a href="https://compassdigital.in/">Compass Digital</a> — not a real shop. No real payment.</p>
-<p>Fictional products, placeholder images.</p>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <h4>Awadh Chikan Co.</h4>
+        <p>Hand-embroidered chikankari from Lucknow. A demo concept store — the brand, products and prices are fictional.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="shop.html">Shop All</a></li>
+          <li><a href="shop.html?cat=women">Women</a></li>
+          <li><a href="shop.html?cat=men">Men</a></li>
+          <li><a href="shop.html?cat=kids">Kids</a></li>
+          <li><a href="shop.html?cat=home">Home Living</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Demo info</h4>
+        <ul>
+          <li><a href="cart.html">Demo checkout</a></li>
+          <li><a href="https://wa.me/919696442435" target="_blank" rel="noopener">Order on WhatsApp</a></li>
+          <li><a href="https://compassdigital.in/">Built by Compass Digital</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p><strong>Awadh Chikan Co., Lucknow</strong> — demo concept store. Not a real shop. No real payment is taken.</p>
+      <p>Fictional products. Product images are AI-generated for demonstration. Built by <a href="https://compassdigital.in/">Compass Digital</a>.</p>
+    </div>
+  </div>
 </footer>
+
 <script src="app.js"></script>
+<script>
+let qty = 1;
+let selectedSize = "S";
+
+document.getElementById('size-pills').addEventListener('click', e => {
+  const btn = e.target.closest('.size-pill');
+  if (!btn) return;
+  document.querySelectorAll('.size-pill').forEach(b => b.classList.remove('selected'));
+  btn.classList.add('selected');
+  selectedSize = btn.dataset.size;
+});
+
+function changeQty(d) {
+  qty = Math.max(1, Math.min(9, qty + d));
+  document.getElementById('qty').textContent = qty;
+}
+
+function addToCartGo() {
+  addToCart('kurta-white', 'Classic White Chikan Kurta', 1899, 'product-kurta-white.webp', selectedSize, qty);
+  showToast('Added ' + qty + ' × Classic White Chikan Kurta (' + selectedSize + ') — <a href="cart.html">View cart</a>');
+  openDrawer();
+}
+
+function buyOnWhatsApp() {
+  const msg = 'Hello Aayush, I tried your demo store (Awadh Chikan Co.). I want an online store like this for my own brand — what would it cost?\n\nI\'d like: Classic White Chikan Kurta (' + selectedSize + ') x ' + qty + ' = ₹' + (1899 * qty).toLocaleString('en-IN') + '\n\n(This is a demo — no real payment.)';
+  window.open('https://wa.me/919696442435?text=' + encodeURIComponent(msg), '_blank');
+}
+</script>
 </body>
 </html>

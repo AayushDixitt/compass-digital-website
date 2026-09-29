@@ -3,49 +3,243 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Home | Awadh Chikan Co. (Demo)</title>
+<title>Awadh Chikan Co. — Hand-Embroidered Chikankari from Lucknow (Demo Store)</title>
+<meta name="description" content="Awadh Chikan Co. — a demo concept store of hand-embroidered Lucknowi chikankari kurtis, kurtas, sarees & home linen. Browse the collection, try the cart and demo checkout. Not a real shop." />
+<meta property="og:title" content="Awadh Chikan Co. — Chikankari from Lucknow (Demo)" />
+<meta property="og:description" content="Hand-embroidered chikankari wear. Demo concept store built by Compass Digital — not a real shop." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://compassdigital.in/demo-store/images/product-anarkali.webp" />
+<link rel="canonical" href="https://compassdigital.in/demo-store/" />
 <link rel="stylesheet" href="style.css" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪡</text></svg>" />
 </head>
 <body>
-<div class="demo-banner">Demo concept store built by <a href="https://compassdigital.in/">Compass Digital</a> — not a real shop.</div>
-<header class="store-header"><div class="header-inner">
-<div class="brand"><h1>Awadh Chikan Co.</h1><p>Lucknow</p></div>
-<div class="header-actions"><a href="cart.html" class="cart-btn">Cart <span class="cart-count" style="display:none">0</span></a></div>
-</div></header>
-<nav class="store-nav"><ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="shop.html">Shop All</a></li>
-<li><a href="cart.html">Cart</a></li>
+<div class="demo-banner">Demo concept store built by <a href="https://compassdigital.in/">Compass Digital</a> — not a real shop. No real payment.</div>
+
+<header class="store-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html"><h1>Awadh Chikan Co.</h1><p>Lucknow</p></a>
+    <nav class="header-nav" aria-label="Primary">
+      <a href="index.html" class="active">Home</a>
+      <a href="shop.html">Shop All</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+    <div class="header-actions">
+      <a href="cart.html" class="cart-btn" aria-label="Open cart">🛒 Cart <span class="cart-count" style="display:none">0</span></a>
+    </div>
+  </div>
+</header>
+<nav class="mobile-nav" aria-label="Mobile"><ul>
+  <li><a href="index.html" class="active">Home</a></li>
+  <li><a href="shop.html">Shop All</a></li>
+  <li><a href="cart.html">Cart</a></li>
 </ul></nav>
+
 <main class="store-main">
 
-<div class="hero">
-<h2>Chikankari from Lucknow</h2>
-<p>Hand-embroidered chikan wear, made by artisans in Lucknow. Browse the collection, add to cart, and try the demo checkout.</p>
-<a href="shop.html" class="btn">Shop the Collection</a>
-</div>
-<h2 class="section-title">Featured</h2>
-<div class="product-grid"><div class="product-card"><a href="product-kurta-white.html">
-<div class="product-img">K</div>
-<div class="product-info"><h3>Classic White Chikan Kurta</h3><div class="product-price">₹1,899</div></div>
-</a></div><div class="product-card"><a href="product-kurti-blue.html">
-<div class="product-img">K</div>
-<div class="product-info"><h3>Pastel Blue Chikan Kurti</h3><div class="product-price">₹1,499</div></div>
-</a></div><div class="product-card"><a href="product-saree-hand.html">
-<div class="product-img">S</div>
-<div class="product-info"><h3>Hand-Embroidered Chikan Saree</h3><div class="product-price">₹3,999</div></div>
-</a></div><div class="product-card"><a href="product-palazzo-set.html">
-<div class="product-img">P</div>
-<div class="product-info"><h3>Chikan Palazzo Set</h3><div class="product-price">₹2,299</div></div>
-</a></div></div>
-<div class="text-center mt-2"><a href="shop.html" class="btn">View All 10 Products</a></div>
+  <!-- HERO -->
+  <div class="hero fade-up">
+    <div class="hero-copy">
+      <div class="eyebrow">Hand-embroidered in Lucknow</div>
+      <h1>Chikankari, made for <em>every day</em> elegance.</h1>
+      <p>Shadow-work, phanda and jaali — stitched by hand by artisan clusters of Awadh. Kurtis, kurtas, sarees and home linen in breathable cottons and mulmuls.</p>
+      <div class="btn-row">
+        <a href="shop.html" class="btn">Shop the Collection</a>
+        <a href="#craft" class="btn btn-outline">Our Craft</a>
+      </div>
+      <div class="hero-trust">
+        <span>Free shipping over ₹999</span>
+        <span>COD available</span>
+        <span>7-day easy returns</span>
+      </div>
+    </div>
+    <div class="hero-img fade-up fade-up-1">
+      <img src="images/product-anarkali.webp" alt="Blush pink hand-embroidered chikankari anarkali" fetchpriority="high" />
+    </div>
+  </div>
+
+  <!-- CATEGORIES -->
+  <section class="block">
+    <div class="center">
+      <div class="eyebrow">Shop by collection</div>
+      <h2 class="h2">Find your chikan</h2>
+    </div>
+    <div class="cat-grid">
+      <a class="cat-tile fade-up" href="shop.html?cat=women">
+        <img src="images/product-kurti-blue.webp" alt="Women's chikankari collection" loading="lazy" />
+        <div class="cat-label">Women<small>7 pieces</small></div>
+      </a>
+      <a class="cat-tile fade-up fade-up-1" href="shop.html?cat=men">
+        <img src="images/product-kurta-men.webp" alt="Men's chikankari collection" loading="lazy" />
+        <div class="cat-label">Men<small>1 piece</small></div>
+      </a>
+      <a class="cat-tile fade-up fade-up-2" href="shop.html?cat=kids">
+        <img src="images/product-kurta-kids.webp" alt="Kids' chikankari collection" loading="lazy" />
+        <div class="cat-label">Kids<small>1 piece</small></div>
+      </a>
+      <a class="cat-tile fade-up" href="shop.html?cat=home">
+        <img src="images/product-table-runner.webp" alt="Chikankari home linen collection" loading="lazy" />
+        <div class="cat-label">Home Living<small>1 piece</small></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- BESTSELLERS -->
+  <section class="block">
+    <div class="related-head">
+      <div>
+        <div class="eyebrow">Customer favourites</div>
+        <h2 class="h2" style="margin-bottom:0">Bestsellers</h2>
+      </div>
+      <a href="shop.html">View all 10 →</a>
+    </div>
+    <div class="product-grid">
+      <div class="product-card">
+        <a class="p-img" href="product-kurti-blue.html"><span class="badge">Bestseller</span><img src="images/product-kurti-blue.webp" alt="Royal Blue Chikankari Kurti" loading="lazy" /></a>
+        <div class="product-info"><h3><a href="product-kurti-blue.html">Royal Blue Chikankari Kurti</a></h3>
+          <div class="price-row"><span class="price">₹1,499</span><span class="mrp">₹1,999</span><span class="off">25% off</span></div>
+          <button class="quick-add" onclick="quickAdd('kurti-blue','Royal Blue Chikankari Kurti',1499,'product-kurti-blue.webp','M')">Add to Cart</button></div>
+      </div>
+      <div class="product-card">
+        <a class="p-img" href="product-kurta-white.html"><span class="badge">Bestseller</span><img src="images/product-kurta-white.webp" alt="Classic White Chikan Kurta" loading="lazy" /></a>
+        <div class="product-info"><h3><a href="product-kurta-white.html">Classic White Chikan Kurta</a></h3>
+          <div class="price-row"><span class="price">₹1,899</span><span class="mrp">₹2,499</span><span class="off">24% off</span></div>
+          <button class="quick-add" onclick="quickAdd('kurta-white','Classic White Chikan Kurta',1899,'product-kurta-white.webp','M')">Add to Cart</button></div>
+      </div>
+      <div class="product-card">
+        <a class="p-img" href="product-saree-hand.html"><span class="badge gold">Premium</span><img src="images/product-saree-hand.webp" alt="Hand-Embroidered Chikan Saree" loading="lazy" /></a>
+        <div class="product-info"><h3><a href="product-saree-hand.html">Hand-Embroidered Chikan Saree</a></h3>
+          <div class="price-row"><span class="price">₹3,999</span><span class="mrp">₹5,499</span><span class="off">27% off</span></div>
+          <button class="quick-add" onclick="quickAdd('saree-hand','Hand-Embroidered Chikan Saree',3999,'product-saree-hand.webp','One size')">Add to Cart</button></div>
+      </div>
+      <div class="product-card">
+        <a class="p-img" href="product-anarkali.html"><span class="badge green">New</span><img src="images/product-anarkali.webp" alt="Gulnaar Blush Chikan Anarkali" loading="lazy" /></a>
+        <div class="product-info"><h3><a href="product-anarkali.html">Gulnaar Blush Chikan Anarkali</a></h3>
+          <div class="price-row"><span class="price">₹2,899</span><span class="mrp">₹3,799</span><span class="off">24% off</span></div>
+          <button class="quick-add" onclick="quickAdd('anarkali','Gulnaar Blush Chikan Anarkali',2899,'product-anarkali.webp','M')">Add to Cart</button></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CRAFT -->
+  <section class="block" id="craft">
+    <div class="craft">
+      <div>
+        <div class="eyebrow">The craft</div>
+        <h3>Stitched by hand, not machine</h3>
+        <p>Every piece carries shadow-work, phanda knots and jaali trellises — embroidery styles that take a single artisan several days per garment. No two pieces are exactly alike.</p>
+      </div>
+      <div>
+        <div class="eyebrow">The fabric</div>
+        <h3>Breathable, honest cloth</h3>
+        <p>Cotton, mulmul and cotton-blends chosen for Lucknow's heat — soft on skin, easy to maintain, and cut for real daily wear rather than the cupboard.</p>
+      </div>
+      <div>
+        <div class="eyebrow">The promise</div>
+        <h3>Made in Lucknow, fairly</h3>
+        <p>We work directly with artisan clusters across Awadh — no middlemen layers. (In this demo, the artisans are fictional. In your store, they'd be real.)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FULL COLLECTION CTA -->
+  <section class="block">
+    <div class="cta-banner">
+      <h2>The full festive edit is here</h2>
+      <p>10 pieces. Kurtis to table linen. Every one hand-finished, every one under ₹4,000.</p>
+      <div class="btn-row" style="justify-content:center">
+        <a href="shop.html" class="btn btn-gold">Shop All 10 Products</a>
+      </div>
+      <p class="demo-note">Demo store — prices and products are fictional.</p>
+    </div>
+  </section>
+
+  <!-- NEW ARRIVALS -->
+  <section class="block">
+    <div class="related-head">
+      <div>
+        <div class="eyebrow">Just landed</div>
+        <h2 class="h2" style="margin-bottom:0">New arrivals</h2>
+      </div>
+      <a href="shop.html">View all →</a>
+    </div>
+    <div class="product-grid">
+      <div class="product-card">
+        <a class="p-img" href="product-coord-set.html"><span class="badge green">New</span><img src="images/product-coord-set.webp" alt="Lavender Chikan Co-ord Set" loading="lazy" /></a>
+        <div class="product-info"><h3><a href="product-coord-set.html">Lavender Chikan Co-ord Set</a></h3>
+          <div class="price-row"><span class="price">₹2,499</span><span class="mrp">₹3,299</span><span class="off">24% off</span></div>
+          <button class="quick-add" onclick="quickAdd('coord-set','Lavender Chikan Co-ord Set',2499,'product-coord-set.webp','M')">Add to Cart</button></div>
+      </div>
+      <div class="product-card">
+        <a class="p-img" href="product-palazzo-set.html"><img src="images/product-palazzo-set.webp" alt="Mint Chikan Palazzo Set" loading="lazy" /></a>
+        <div class="product-info"><h3><a href="product-palazzo-set.html">Mint Chikan Palazzo Set</a></h3>
+          <div class="price-row"><span class="price">₹2,299</span><span class="mrp">₹2,999</span><span class="off">23% off</span></div>
+          <button class="quick-add" onclick="quickAdd('palazzo-set','Mint Chikan Palazzo Set',2299,'product-palazzo-set.webp','M')">Add to Cart</button></div>
+      </div>
+      <div class="product-card">
+        <a class="p-img" href="product-dupatta-mulmul.html"><img src="images/product-dupatta-mulmul.webp" alt="Blush Mulmul Chikan Dupatta" loading="lazy" /></a>
+        <div class="product-info"><h3><a href="product-dupatta-mulmul.html">Blush Mulmul Chikan Dupatta</a></h3>
+          <div class="price-row"><span class="price">₹899</span><span class="mrp">₹1,199</span><span class="off">25% off</span></div>
+          <button class="quick-add" onclick="quickAdd('dupatta-mulmul','Blush Mulmul Chikan Dupatta',899,'product-dupatta-mulmul.webp','One size')">Add to Cart</button></div>
+      </div>
+      <div class="product-card">
+        <a class="p-img" href="product-table-runner.html"><img src="images/product-table-runner.webp" alt="Ivory Chikan Table Runner" loading="lazy" /></a>
+        <div class="product-info"><h3><a href="product-table-runner.html">Ivory Chikan Table Runner</a></h3>
+          <div class="price-row"><span class="price">₹749</span><span class="mrp">₹999</span><span class="off">25% off</span></div>
+          <button class="quick-add" onclick="quickAdd('table-runner','Ivory Chikan Table Runner',749,'product-table-runner.webp','One size')">Add to Cart</button></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO STRIP -->
+  <section class="block">
+    <div class="made-by">
+      <div class="eyebrow">Why this store exists</div>
+      <h2>Like this store? It's a demo.</h2>
+      <p>Everything you just used — the design, the cart, the checkout, WhatsApp ordering — was built by <strong>Compass Digital</strong> as a concept store. We build stores like this for real brands, starting at ₹50,000.</p>
+      <div class="btn-row" style="justify-content:center">
+        <a href="https://compassdigital.in/" class="btn">Get a Store Like This</a>
+        <a href="https://wa.me/919696442435?text=Hello%20Aayush%2C%20I%20tried%20your%20demo%20store%20(Awadh%20Chikan%20Co.).%20I%20want%20an%20online%20store%20like%20this%20for%20my%20brand%20%E2%80%94%20what%20would%20it%20cost%3F" target="_blank" rel="noopener" class="btn btn-whatsapp">Chat on WhatsApp</a>
+      </div>
+    </div>
+  </section>
 
 </main>
+
 <footer class="store-footer">
-<p><strong>Awadh Chikan Co., Lucknow</strong> — Demo concept store</p>
-<p>Built by <a href="https://compassdigital.in/">Compass Digital</a> — not a real shop. No real payment.</p>
-<p>Fictional products, placeholder images.</p>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <h4>Awadh Chikan Co.</h4>
+        <p>Hand-embroidered chikankari from Lucknow. A demo concept store — the brand, products and prices are fictional.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="shop.html">Shop All</a></li>
+          <li><a href="shop.html?cat=women">Women</a></li>
+          <li><a href="shop.html?cat=men">Men</a></li>
+          <li><a href="shop.html?cat=kids">Kids</a></li>
+          <li><a href="shop.html?cat=home">Home Living</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Demo info</h4>
+        <ul>
+          <li><a href="cart.html">Demo checkout</a></li>
+          <li><a href="https://wa.me/919696442435" target="_blank" rel="noopener">Order on WhatsApp</a></li>
+          <li><a href="https://compassdigital.in/">Built by Compass Digital</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p><strong>Awadh Chikan Co., Lucknow</strong> — demo concept store. Not a real shop. No real payment is taken.</p>
+      <p>Fictional products. Product images are AI-generated for demonstration. Built by <a href="https://compassdigital.in/">Compass Digital</a>.</p>
+    </div>
+  </div>
 </footer>
+
 <script src="app.js"></script>
 </body>
 </html>
