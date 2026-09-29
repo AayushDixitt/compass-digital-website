@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Kids' Chikan Kurta | Awadh Chikan Co. (Demo)</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="demo-banner">Demo concept store built by <a href="https://compassdigital.in/">Compass Digital</a> — not a real shop.</div>
+<header class="store-header"><div class="header-inner">
+<div class="brand"><h1>Awadh Chikan Co.</h1><p>Lucknow</p></div>
+<div class="header-actions"><a href="cart.html" class="cart-btn">Cart <span class="cart-count" style="display:none">0</span></a></div>
+</div></header>
+<nav class="store-nav"><ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="shop.html">Shop All</a></li>
+<li><a href="cart.html">Cart</a></li>
+</ul></nav>
+<main class="store-main">
+
+<div class="product-detail">
+<div class="product-img">K</div>
+<div class="product-detail-info">
+<h2>Kids' Chikan Kurta</h2>
+<div class="price">₹999</div>
+<p>Small chikan kurta for kids, soft cotton that won't irritate. For little celebrations.</p>
+<p><strong>Details:</strong> Soft cotton. Light embroidery. Ages 2-10.</p>
+<div class="qty-selector">
+<button onclick="changeQty(-1)">−</button>
+<span id="qty">1</span>
+<button onclick="changeQty(1)">+</button>
+</div>
+<button class="btn" onclick="addToCartAndGo()">Add to Cart</button>
+<div class="mt-2"><a href="shop.html">← Back to Shop</a></div>
+</div>
+</div>
+<script>
+let qty = 1;
+function changeQty(d) { qty = Math.max(1, qty + d); document.getElementById('qty').textContent = qty; }
+function addToCartAndGo() {
+  addToCart("kurta-kids", "Kids' Chikan Kurta", 999, qty);
+  window.location.href = "cart.html";
+}
+</script>
+
+</main>
+<footer class="store-footer">
+<p><strong>Awadh Chikan Co., Lucknow</strong> — Demo concept store</p>
+<p>Built by <a href="https://compassdigital.in/">Compass Digital</a> — not a real shop. No real payment.</p>
+<p>Fictional products, placeholder images.</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
